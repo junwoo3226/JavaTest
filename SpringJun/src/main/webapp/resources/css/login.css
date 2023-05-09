@@ -1,0 +1,173 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#loginWrap{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.loginIn{
+    width: 600px;
+    margin: 0 auto;
+    
+}
+
+h1{
+	color: #f38281;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 50px 30px 30px 30px;
+    margin-bottom: 5px;
+}
+
+.loginBox1{
+	background-color: #FEFAEC;
+    padding: 40px 60px;
+    border: 1px solid #aaa;
+}
+
+.loginTitle, .noneMemberOrder{
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.loginUser{
+	position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+.loginL{
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.inputText1{
+	border: solid 1px #dadada;
+    width: 300px;
+    height: 30px;
+}
+.loginLUp, .noneMemberOrderLUp{
+    margin-bottom: 10px;
+}
+.loginLUp input,.loginLDown input,.noneMemberOrderLUp input,.noneMemberOrderLDown input{
+	padding-left: 5px;
+	box-sizing: border-box;
+}
+.loginButton{
+	border: none;
+	border-radius: 3px;
+    background-color: #4B4F50;
+    width: 150px;
+    height: 74px;
+    text-align: center;
+    line-height: 74px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+.idSave{
+	position:absolute;
+	left: 10px;
+    bottom: -20px;
+}
+.idSave label{
+	font-size: 12px;
+}
+.idSave label input{
+	margin-right: 10px;
+}
+.loginBox2{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+.loginMember{
+    
+}
+
+.loginBox2 div::after{
+	display: inline-block;
+	content: "";
+	clear: both;
+	width: 1px;
+	height: 10px;
+	background-color: #aaa;
+	margin: 1px 10px 0px 5px;
+	
+}
+
+.loginBox2 div:last-child::after{
+	display: none;
+}
+
+.memberButton a,.idButton a,.pwButton a{
+	display: inline-block; 
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+}
+
+.pwButton a{
+	margin-right: 0;
+}
+
+
+
+.facebookLogin{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.facebookLogin a{
+    display: inline-block;
+}
+.facebookButton{
+    width: 300px;
+    height: 35px;
+
+    background-image: url("../img/login_sns_facebook_wide.gif");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-indent: -999999999999999px;
+}
+
+.noneUser{
+    display: flex;
+	justify-content: space-between;
+    margin-bottom: 10px;
+}
+.noneMemberOrderL{
+    margin-right: 10px;
+}
+.noneMemberOrderR .checkButton{
+	border: none;
+	border-radius: 3px;
+    background-color: #4B4F50;
+    width: 150px;
+    height: 74px;
+    text-align: center;
+    line-height: 74px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+.cautions{
+    color: #333;
+    font-size: 12px;
+}

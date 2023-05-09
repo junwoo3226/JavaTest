@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jun.mapper.MemberMapper">
+	<!-- 하기전에 입력을 안한 값이있으면 자동으로 넣어줘야한다 -->
+	<insert id="insert">
+		insert into member 
+		values(#{id},#{password},#{name},#{birth},#{gender},#{email},#{phone},'고객');
+	</insert>
+	
+	<select id="login" resultType="org.jun.domain.MemberDTO">
+  		select * 
+		from member
+		where id=#{id}
+		and password=#{password};
+  	</select>
+  	
+  	<select id="getId" resultType="string">
+  		select id
+		from member;
+  	</select>
+  	
+  	<select id="idpwChk" resultType="int">
+  		select count(*)
+		from member
+		where id= #{id}
+		and password=#{password};
+  	</select>
+  	
+  	<select id="idChk" resultType="int">
+  		select count(*)
+		from member
+		where id= #{id};
+  	</select>
+	
+	<select id="idSearch" resultType="string">
+  		select id
+		from member
+		where name= #{name} and email= #{email};
+  	</select>
+  	
+  	<select id="pwSearch" resultType="org.jun.domain.MemberDTO">
+  		select *
+		from member
+		where id=#{id} and name= #{name} and email= #{email};
+  	</select>
+  	
+  	<update id="updatePassword">
+  		update member
+  		set password=#{password} 
+  		where id=#{id};
+  	</update>
+  	
+  	
+  	
+</mapper>

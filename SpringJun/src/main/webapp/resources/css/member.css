@@ -1,0 +1,148 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: top;
+    border: 0;
+}
+#memberWrap{
+    background-color: #FEFAEC;	
+    width: 100%;
+    margin: 0 auto;
+}
+.memberIn{
+    width: 420px;
+    margin: 0 auto;
+}
+h2{
+	color: #f38281;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 50px 30px 30px 30px;
+    margin-bottom: 5px;
+}
+h3{
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+h4{
+	color: #ff0000;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.inputText1{
+	border: solid 1px #dadada;
+    width: 400px;
+    height: 40px;
+}
+.inputText2{
+	border: solid 1px #dadada;
+    width: 128px;
+    height: 40px;
+}
+.inputText3{
+	border: solid 1px #dadada;
+    width: 128px;
+    height: 44px;
+}
+.inputText4{
+	border: solid 1px #dadada;
+    width: 250px;
+    height: 40px;
+    margin: 0px;
+}
+input, select{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.number{
+    display: flex;
+}
+#emailCheckInputBoxFalse{
+	background-color: #ebebe4;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+#emailCheckInputBoxTrue{
+	background-color: #fff;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+#phoneCheckInputBoxFalse{
+	background-color: #ebebe4;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+#phoneCheckInputBoxTrue{
+	background-color: #fff;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.correct{
+    color : green;
+}
+.incorrect{
+    color : red;
+}
+.emailButton, .phoneButton{
+    background-color: #f38281;
+    width: 135px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+.memberButton{
+	border: none;
+    background-color: #f38281;
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.memberBox10 label::after{
+	content: "";
+	display: inline-block;
+	clear: both;
+	width: 1px;
+	height: 12px;
+	background-color: #aaa;
+	margin: 0 5px;
+}
+
+.memberBox10 label:last-child::after{
+	display: none;
+}
+
+
+.memberBox10 label a{
+    font-size: 12px;
+    color: #333;
+   
+}
+.memberBox10 #point a{
+	font-weight: bold;
+}
+.memberBox10 {
+    margin-bottom: 20px;
+}

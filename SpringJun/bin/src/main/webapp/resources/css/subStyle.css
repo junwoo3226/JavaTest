@@ -1,0 +1,258 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 20px;
+    color: #333;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: top;
+    border: 0;
+}
+
+.row1{
+    position: relative;
+    width: 1200px;
+    margin: 100px auto;
+}
+
+.row1 h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #aaa;
+}
+
+.mainGnb{
+    padding: 0 20px;
+}
+
+.mainGnb ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainGnb ul li{
+    margin-right: 10px;
+    width: 150px;
+    height: 40px;
+    
+}
+
+.mainGnb ul li a{
+    display: inline-block;
+    font-size: 14px;
+    color: #777;
+    width: 100%;
+    border-left: 1px dotted #777;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.mainGnb ul li a:hover{
+    text-decoration: underline;
+}
+.mainGnb ul .on a{
+    color: #333;
+    font-weight: 500;
+}
+
+.mainGnbList ul{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: flex;
+}
+
+.mainGnbList ul li:not(:first-child)::before{
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 5px;
+    height: 5px;
+    /* background-color: aqua; */
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    transform: rotate(45deg);
+    margin: 7px 10px 0 10px
+}
+
+.mainGnbList ul li a{
+    color: #aaa;
+    opacity: 0.6;
+}
+
+.mainGnbList ul .point a{
+    color: #333;
+    opacity: 1;
+    font-weight: 500;
+}
+
+.row2{
+    width: 1200px;
+    margin: 0 auto 100px auto;
+    position: relative;
+    padding: 70px 0;
+}
+
+.mainUtil{
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+.mainUtil ul{
+    display: flex;
+}
+
+.mainUtil ul li:not(:first-child)::before{
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 1px;
+    height: 10px;
+    background-color: #777;
+    margin: 5px 10px 0 10px;
+
+}
+
+.mainUtil ul li a{
+    color: #777;
+}
+
+.mainUtil ul .point a{
+    color: #333;
+    font-weight: 500;
+}
+
+/* main */
+
+.main{
+    margin-bottom: 30px;
+}
+
+.main ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+}
+
+.main ul li{
+    /* background-color: blueviolet; */
+    width: 250px;
+    margin: 0 20px 30px 0;
+    text-align: center;
+}
+
+.main ul li a{
+    display: block;
+}
+
+.main ul li a .itemImg{
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    overflow: hidden;
+}
+
+.main ul li a .itemImg img{
+    width: 100%;
+}
+
+.main li:hover img{
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+.main li img{
+    transition: transform 2s;
+}
+
+.main ul li a .itemName{
+    font-size: 14px;
+    height: 60px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.main ul li a .itemPrice{
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* main 끝 */
+
+
+/* 페이저 */
+
+.mainPager{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.mainPager ul{
+    display: flex;
+    justify-content: center;
+}
+
+.mainPager ul li{
+    margin: 0 5px;
+}
+
+.mainPager ul li a::before{
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 2px;
+    height: 13px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-left: 2px solid #333;
+    margin: 3px 5px 0 5px;
+    padding-left: 1px;
+}
+
+.mainPager ul li a::after{
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 2px;
+    height: 13px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-right: 2px solid #333;
+    margin: 3px 5px 0 5px;
+    padding-right: 1px;
+}
+
+.mainPager ul li a{
+    font-size: 13px;
+    color: #333;
+    opacity: 0.8;
+}
+
+.mainPager ul .on a{
+    font-weight: 700;
+    opacity: 1;
+}

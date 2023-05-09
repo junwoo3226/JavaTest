@@ -1,0 +1,179 @@
+@charset "UTF-8";
+#footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #4B4F50;
+}
+
+.footerIn{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.fLogo{
+    position: absolute; 
+    top: -10px;
+    left: -20px;
+}
+
+.footerIn .fLogo a{
+    display: block;
+    margin-bottom: 15px;
+    background-image: url(../img/f_logo_transparent.png);
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    background-position: -25px -15px;
+    width: 100px;
+    height: 100px;
+    text-indent: -999999px;
+}
+
+.fMenu{
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+
+.fMenu ul{
+    display: flex;
+}
+
+.fMenu ul li{
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.fMenu ul li a{
+    display: block;
+    padding: 5px 15px;
+    color: #FFFEFF;
+    border: 1px solid #FFFEFF;
+}
+
+.fMenu .point a{
+    font-weight: 700;
+    color: bisque;
+}
+
+.fInfo{
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+.fInfo a{
+    color: #aaa;
+    font-weight: 700;
+}
+
+.fInfo span{
+    color: #FFFEFF;
+    margin-right: 12px;
+}
+
+.security{
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+.security ul{
+    display: flex;
+}
+
+.security ul li{
+    margin-right: 15px;
+}
+
+.security ul li:last-child a{
+    display: inline-block;
+    background-color: #666;
+    padding: 5px 10px;
+    margin-left: 15px;
+    color: #FFFEFF;
+}
+
+.copyright{
+    color: #FFFEFF;
+}
+
+.security{
+    position: relative;
+    padding-left: 140px;
+    color: #fff;
+}
+
+.security h2{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/escrow_mark2.png);
+    background-size: 75px auto;
+    text-indent: -99999px;
+}
+
+.security p{
+    margin-bottom: 5px;
+}
+
+.security a{
+    color: #aaa;
+    font-weight: 700;
+}
+
+.footerCs{
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.footerCs h3{
+    color: #FFFEFF;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footerCs .tel{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #FFFEFF;
+    margin-bottom: 15px;
+}
+
+.footerCs img{
+    margin-right: 5px;
+}
+
+.footerCs .time{
+    color: #FFFEFF;
+    font-size: 14px;
+}
+k
+.footerSns ul{
+    display: flex;
+}
+
+.footerSns ul li{
+    margin-right: 10px;
+}
+
+.goTop{
+    position: fixed;
+    bottom: 150px;
+    right: 100px;
+}
+
+.goTop a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/upwards-arrow.png);
+    background-size: 50px auto;
+    text-indent: -999999px;
+}

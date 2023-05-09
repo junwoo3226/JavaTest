@@ -1,0 +1,140 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: top;
+    border: 0;
+}
+
+#loginWrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.loginIn{
+    width: 600px;
+    margin: 0 auto;
+    
+}
+
+.loginBox1{
+    padding: 40px 40px;
+    border: 1px solid #aaa;
+}
+
+.loginTitle, .noneMemberOrder{
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.loginUser{
+    display: flex;
+    margin-bottom: 20px;
+}
+.loginL{
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.inputText1{
+    width: 300px;
+    height: 30px;
+}
+.loginLUp, .noneMemberOrderLUp{
+    margin-bottom: 10px;
+}
+.loginButton{
+    background-color: #aaa;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.loginBox2{
+    display: flex;
+    margin-bottom: 30px;
+}
+.loginMember{
+    
+}
+.memberButton{
+    width: 140px;
+    height: 40px;
+    background-color: #aaa;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    margin-right: 20px;
+}
+.idButton{
+    margin-right: 20px;
+}
+.idButton,.pwButton{
+    width: 140px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #333;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    color: #333;
+}
+
+
+
+.facebookLogin{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.facebookLogin a{
+    display: inline-block;
+}
+.facebookButton{
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    background-color: dodgerblue;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+.noneUser{
+    display: flex;
+    margin-bottom: 10px;
+}
+.noneMemberOrderL{
+    margin-right: 10px;
+}
+.noneMemberOrderR{
+    background-color: #fff;
+    border: 1px solid #333;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 16px;
+    color: #333;
+}
+.cautions{
+    color: #333;
+    font-size: 12px;
+}

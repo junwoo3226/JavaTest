@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+.notice{
+  padding: 30px 0 20px 0;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.board{
+  width: 1100px;
+  margin: 0 auto 100px auto;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 10px 10px 15px 10px;
+  border-top: 1px solid #333;
+}
+
+.title{
+  font-weight: 500;
+}
+
+.writer{
+  font-weight: 500;
+}
+
+.center{
+  padding: 5px 15px;
+  border-bottom: 1px solid #333;
+}
+
+.regdate{
+  text-align: right;
+  font-size:12px;
+}
+
+.content{
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.sunder{
+  text-decoration: underline;
+}
+
+.sblue{
+  color: dodgerblue;
+}
+
+.sred{
+  color: red;
+}
+
+.bottom{
+  text-align: right;
+  padding: 10px;
+}
+
+.btn{
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+.btn:hover{
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#btnList{
+  background-color: #f3b7b6b7;
+}
+
+#btnWrite{
+  background-color:#f38381;
+  margin-left: 10px;
+}
+

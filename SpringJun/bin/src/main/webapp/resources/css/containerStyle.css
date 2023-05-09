@@ -1,0 +1,357 @@
+
+#container{
+    width: 100%;
+}
+/* 공통부분 모음 */
+
+
+.containerIn{
+    min-width: 1200px;
+}
+.more{
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.more a{
+    color: #333;
+}
+.more a:hover{
+    text-decoration: underline;
+}
+/* 메인페이지 본문1 */
+.main1{
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.main1Slide img{
+    width: 100%;
+    height: auto;
+}
+.main1Pager ul{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -35px;
+}
+.main1Pager li{
+    padding: 0 3px;
+}
+.main1Pager li a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #aaa;
+    border-radius: 50%;
+    text-indent: -9999px;
+    opacity: 0.5;
+}
+.main1Pager .active a{
+    opacity: 1;
+}
+/* 메인페이지 본문2 */
+.main2{
+    width: 1200px;
+    margin: 0 auto 100px auto;
+    position: relative;
+}
+.main2P{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.main2P .lp{
+    width: 29%;
+    height: 1px;
+    background-color: #aaa;
+}
+.main2P .rp{
+    width: 29%;
+    height: 1px;
+    background-color: #aaa;
+}
+.main2Navi{
+    width: 83%;
+    margin: 0 auto;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -500px;
+    z-index: 30;
+}
+.main2Navi ul{
+    display: flex;
+    justify-content: center;
+}
+.main2Navi li {
+    padding: 0 5px;
+}
+.main2Navi li a{
+    font-size: 25px;
+    line-height: 1.4em;
+    font-weight: 700;
+    color: #333;
+    padding: 13px 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 10%;
+}
+.main2Navi .on a{
+    color: #FEFAEC;
+    background-color: #F38281;
+}
+.main2Navi li:nth-child(1) a:hover{
+    color: #F38281;
+    background-color: #FEFAEC;
+}
+.main2Navi li:nth-child(2) a:hover{
+    color: #F38281;
+    background-color: #FEFAEC;
+}
+.main2Navi li:nth-child(3) a:hover{
+    color: #F38281;
+    background-color: #FEFAEC;
+}
+.main2Navi li:nth-child(4) a:hover{
+    color: #F38281;
+    background-color: #FEFAEC;
+}
+.main2Box1{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+.main2Box1 ul{
+    display: flex;
+}
+.main2Box1 li{
+    width: 25%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.main2Box1Poto{
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.main2Box1Poto img{
+    width: 100%;
+    height: 100%;
+}
+.main2Box1Title{
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1em;
+    font-weight: 500;
+    color: #333;
+}
+.main2Box1Price{
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #333;
+}
+.main2Box1Price span{
+    padding-left: 3px;
+}
+.main2BoxNew{
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    background-color: #F38281;
+    color: #FEFAEC;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    display: block;
+}
+/* 메인페이지 본문3 */
+.main3{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.main3Box h2{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+.main3List{
+    margin-bottom: 10px;
+}
+.main3List ul{
+    display: flex;
+}
+.main3List li{
+    width: 25%;
+    padding-right: 10px;
+}
+.main3List li:last-child{
+    padding-right: 0;
+}
+.main3Title{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #aaa;
+    border-bottom: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.main3Contents{
+    padding: 15px 20px 15px 20px;
+    border: 1px solid #aaa;
+    border-bottom: 0;
+    height: 150px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* 글자의 설정 */
+    color: #333;
+    line-height: 1em;
+    text-align: left; 
+    /* 글자의 줄은 3줄로 표시한다 */
+    -webkit-line-clamp: 3;
+    /* 글자의 자르는방법은 단어 단위로 자른다 */
+    word-wrap: break-word;
+
+}
+.main3Contents span{
+    display: block;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 500;
+}
+.main3Info{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    color: #333;
+}
+.main3Info span{
+    padding-right: 10px;
+}
+.main3Pager ul{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -35px;
+}
+.main3Pager li{
+    padding: 0 3px;
+}
+.main3Pager li a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #aaa;
+    border-radius: 50%;
+    text-indent: -9999px;
+    opacity: 0.5;
+}
+.main3Pager .active a{
+    opacity: 1;
+}
+
+
+/* 메인페이지 본문4 */
+.main4{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.main4Box{
+    width: 100%;
+    height: 200px;
+}
+.main4Box img{
+    width: 100%;
+    height: 100%;
+}
+/* 메인페이지 본문5 */
+.main5{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    position: relative;
+}
+.main5Box h2{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+.main5Box ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    line-height: 200px;
+    text-indent: -9999px;
+}
+/* html 클래스주고 클래스마다 url만 변경하면 완성 */
+.main5Box li{
+    width: 25%;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+}
+.main5Box li a{
+    height: 300px;
+    display: block;
+    background-image: url(../img/origen_A_m.png);
+    background-repeat: no-repeat;
+    background-size: 150px auto;
+    background-position: center;
+}
+/* 위의 이미지는 삭제하고 새로운 이미지들을 전부 넣어줘야한다 */
+.main5Box .main5BoxLi1 a{
+    background-image: url(../img/origen_A_m.png);
+}
+
+
+
+
+.main5Box .main5BoxLi2{
+    border-left: none;
+}
+.main5Box .main5BoxLi3{
+    border-left: none;
+}
+.main5Box .main5BoxLi4{
+    border-left: none;
+}
+.main5Box .main5BoxLi5{
+    border-top: none;
+}
+.main5Box .main5BoxLi6{
+    border-top: none;
+    border-left: none;
+}
+.main5Box .main5BoxLi7{
+    border-top: none;
+    border-left: none;
+}
+.main5Box .main5BoxLi8{
+    border-top: none;
+    border-left: none;
+}
+

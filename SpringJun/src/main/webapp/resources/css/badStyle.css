@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+
+#container{
+    margin-bottom: 60px;
+}
+
+#containerIn{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.conTitle{
+	line-height: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 30px;
+}
+
+.board{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.board th{
+    padding: 15px;
+    font-size: 18px;
+}
+
+.board td{
+    padding: 15px;
+    font-size: 16px;
+}
+
+.board thead{
+    border-bottom: 1px solid #aaa;
+}
+
+.board .mainTitle{
+    width: 30%;
+}
+
+.board tbody{
+    text-align: center;
+}
+
+.board .title a,.board .gong a{
+	color: #333;
+}
+
+.chooseBtn{
+	position: absolute;
+    bottom: -20px;
+    left: 10px;
+	background-color: #fff;
+	color: #333;
+	border: 1px solid #aaa;
+	padding: 5px 10px;
+}
+
+.none{
+	display: none;
+}
+
+
+#boardWrite{
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+}
+
+
+#boardWrite a{
+	color: #333;
+	border: 1px solid #aaa;
+	padding: 5px 15px;
+}
+
+.pagination{
+	display: flex;
+    justify-content: center;
+    
+}
+
+.paginate_button{
+	border: 1px solid #aaa;
+	margin: 10px 5px;
+}
+
+.paginate_button a{
+	padding: 5px 15px;
+	font-size: 14px;
+	color: #333;
+}
+
+.search{
+	position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.AS, .selectBox, .textBox{
+	padding: 5px 15px;
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #aaa;
+} 
+
+

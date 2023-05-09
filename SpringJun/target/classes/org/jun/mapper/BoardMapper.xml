@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jun.mapper.BoardMapper">
+
+<insert id="write">
+	insert into board(writer,title,content,memberId)
+	values(#{writer},#{title},#{content},#{memberId})
+</insert>
+   <!-- board테이블에 Insert하기전에 bno값을 미리 만들어놓고 insert해야함. -->
+<insert id="insertSelectKey"> 
+     <selectKey keyProperty="bno" order="BEFORE" resultType="int">
+	 	select IFNULL(max(bno),0)+1 bno from board;
+	 </selectKey>
+ 		insert into board(bno,title,content, writer,memberId)
+		values(#{bno},#{title},#{content},#{writer},#{memberId}) 
+</insert>
+<select id="detail" resultType="org.jun.domain.BoardDTO">
+	select * from board
+	where bno=#{bno}
+</select>
+<update id="cntupdate">
+	update board set cnt=cnt+1 where bno=#{bno}
+</update>
+<update id="modify">
+	update board
+	set title=#{title},content=#{content},regdate=now() where bno=#{bno}
+</update>
+
+<select id="list" resultType="org.jun.domain.BoardDTO">
+	select * from (select @rownum:=@rownum+1 as rownum,b.* from(select
+	@rownum:=0) as tmp, board as b
+	<choose>
+		<when test="search == null">
+			where 1=1
+		</when>
+		<when test="search == 'T'.toString()">
+			where title like concat('%',#{keyword},'%')
+		</when>
+		<when test="search == 'C'.toString()">
+			where content like concat('%',#{keyword},'%')
+		</when>
+		<when test="search == 'W'.toString()">
+			where writer like concat('%',#{keyword},'%')
+		</when>
+		<when test="search == 'TC'.toString()">
+			where title like concat('%',#{keyword},'%')
+			or content
+			like concat('%',#{keyword},'%')
+		</when>
+
+		<otherwise>
+			where title like concat('%',#{keyword},'%')
+			or content like
+			concat('%',#{keyword},'%')
+			or writer like concat('%',#{keyword},'%')
+		</otherwise>
+	</choose>
+	) as boardList 
+	
+	   <![CDATA[
+		where rownum > (#{pageNum}-1)*#{amount} and rownum <= #{pageNum}*#{amount}
+		order by regdate desc;
+		]]>
+
+</select>
+
+<select id="getTotalCount" resultType="int">
+	select count(*) from board
+	<choose>
+		<when test="search == null">
+			where 1=1
+		</when>
+		<when test="search == 'T'.toString()">
+			where title like concat('%',#{keyword},'%')
+		</when>
+		<when test="search == 'C'.toString()">
+			where content like concat('%',#{keyword},'%')
+		</when>
+		<when test="search == 'W'.toString()">
+			where writer like concat('%',#{keyword},'%')
+		</when>
+		<when test="search == 'TC'.toString()">
+			where title like concat('%',#{keyword},'%')
+			or content
+			like concat('%',#{keyword},'%')
+		</when>
+
+		<otherwise>
+			where title like concat('%',#{keyword},'%')
+			or content like
+			concat('%',#{keyword},'%')
+			or writer like concat('%',#{keyword},'%')
+		</otherwise>
+	</choose>
+</select>
+<delete id="remove">
+	delete from board where bno=#{bno}
+</delete>
+
+<delete id="ajaxRemove">
+	delete from board where bno=#{bno}
+</delete>
+
+
+<select id="reply" resultType="org.jun.domain.ReplyDTO">
+	select * from reply
+	where bno=#{bno}
+</select>
+</mapper>

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.emailCheckBox{
+    display: flex;
+}
+
+#emailCheckInputBoxFalse{
+	background-color: #ebebe4;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+#emailCheckInputBoxTrue{
+	background-color: #fff;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.correct{
+    color : green;
+}
+.incorrect{
+    color : red;
+}
+
+.emailButton{
+	 background-color: #f38281;
+	width: 135px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
